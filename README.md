@@ -1,4 +1,7 @@
-Really simple receiver for the Makita AWS bluetooth wireless dust extractor system.
+Really simple receiver for the Makita AWS bluetooth wireless dust extractor
+system.
 
-Doesn't actually support pairing at all, just listens to any Makita AWS transmitter
-in range.
+Runs on Micropython on a Raspberry Pi Pico W.
+
+Doesn't actually support pairing at all, just listens to any Makita AWS
+transmitter in range.
