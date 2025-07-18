@@ -702,155 +702,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Polyfuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Polyfuse"
-				(at 2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*polyfuse* *PTC*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Polyfuse_0_1"
-				(polyline
-					(pts
-						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -0.762 2.54)
-					(end 0.762 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Polyfuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2558,7 +2409,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:BF244A"
+		(symbol "Transistor_FET:2N7000"
 			(pin_names
 				(hide yes)
 			)
@@ -2574,7 +2425,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BF244A"
+			(property "Value" "2N7000"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -2594,7 +2445,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/BF244x.pdf"
+			(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -2604,7 +2455,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "50mA Id, 30V Vgs, N-Channel FET Transistor, TO-92"
+			(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2613,7 +2464,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "N-Channel FET Transistor Low Voltage"
+			(property "ki_keywords" "N-Channel MOSFET Logic-Level"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2631,19 +2482,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BF244A_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy -1.016 0.381) (xy -1.016 -0.381) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "2N7000_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -2668,9 +2507,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2681,7 +2521,31 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 2.54 1.397) (xy 0.254 1.397)
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -2693,7 +2557,88 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 -1.397) (xy 0.254 -1.397)
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -2704,7 +2649,7 @@
 					)
 				)
 			)
-			(symbol "BF244A_1_1"
+			(symbol "2N7000_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2733,7 +2678,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2751,7 +2696,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3436,6 +3381,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 52.07) (xy 246.38 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b499f16c-4dd3-4946-9cce-861e8a0f5cc8")
+	)
+	(wire
+		(pts
 			(xy 44.45 50.8) (xy 93.98 50.8)
 		)
 		(stroke
@@ -3496,7 +3451,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 67.31) (xy 33.02 67.31)
+			(xy 29.21 67.31) (xy 48.26 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3534,18 +3489,8 @@
 		)
 		(uuid "fa7a9819-8180-4dc8-bc68-64e8b0c5f94a")
 	)
-	(wire
-		(pts
-			(xy 40.64 67.31) (xy 48.26 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc87a13f-2da5-47e8-9808-4c1ab91ff7d8")
-	)
 	(label "LED"
-		(at 158.75 66.04 180)
+		(at 158.75 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3555,7 +3500,7 @@
 		(uuid "165d96ce-8193-4803-975e-5535f43892ea")
 	)
 	(label "COIL"
-		(at 158.75 68.58 180)
+		(at 158.75 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3604,8 +3549,18 @@
 		)
 		(uuid "3f274989-9a20-4a4e-85b1-1d025e967e5c")
 	)
+	(label "RUN"
+		(at 158.75 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63b0ba0f-07d5-41ac-83ac-9b029a0284c3")
+	)
 	(label "SW_PUSH"
-		(at 158.75 63.5 180)
+		(at 158.75 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3613,6 +3568,16 @@
 			(justify right bottom)
 		)
 		(uuid "95fd4fa1-08c6-4f6d-bdcb-a20e53aaa951")
+	)
+	(label "RUN"
+		(at 246.38 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cfee7cf5-d65f-4e78-ae75-be04b663d318")
 	)
 	(label "COIL"
 		(at 105.41 92.71 180)
@@ -4399,6 +4364,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:2N7000")
+		(at 123.19 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b8947b2-6fcf-4d56-8b51-4888ab30ff1b")
+		(property "Reference" "Q1"
+			(at 129.54 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N7000"
+			(at 129.54 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 128.27 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
+			(at 128.27 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
+			(at 123.19 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5525615-1ad0-468e-b549-1fecfb153ebc")
+		)
+		(pin "2"
+			(uuid "8bdd0661-ec92-45a3-80cb-9c61c655347b")
+		)
+		(pin "3"
+			(uuid "070a722a-e6c0-46de-b9d3-477379910609")
+		)
+		(instances
+			(project ""
+				(path "/5e34a7b6-ac3a-4d62-b642-06cd9d5c366e"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 86.36 97.79 270)
 		(unit 1)
@@ -4530,75 +4571,6 @@
 			(project "makita_aws_rx"
 				(path "/5e34a7b6-ac3a-4d62-b642-06cd9d5c366e"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Polyfuse")
-		(at 36.83 67.31 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56852888-44f3-4432-96b1-439f6e1c62d1")
-		(property "Reference" "F1"
-			(at 36.83 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Polyfuse"
-			(at 36.83 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 41.91 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 36.83 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 36.83 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db15acd4-905a-46b4-956d-454360384524")
-		)
-		(pin "2"
-			(uuid "d25dd1f9-d33a-4386-9957-436ad5095da1")
-		)
-		(instances
-			(project ""
-				(path "/5e34a7b6-ac3a-4d62-b642-06cd9d5c366e"
-					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -5066,6 +5038,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 246.38 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3ae208c-f4c2-475a-8f43-8d9386d66595")
+		(property "Reference" "#PWR012"
+			(at 246.38 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 246.38 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d302a7f4-130b-4c6c-ab1c-ea8c93afe217")
+		)
+		(instances
+			(project ""
+				(path "/5e34a7b6-ac3a-4d62-b642-06cd9d5c366e"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 25.4 157.48 0)
 		(unit 1)
@@ -5124,6 +5162,76 @@
 			(project "makita_aws_rx"
 				(path "/5e34a7b6-ac3a-4d62-b642-06cd9d5c366e"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 246.38 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd0baf2f-8fc2-4ac9-8cb1-c44c1e16f1e4")
+		(property "Reference" "SW3"
+			(at 247.65 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RESET"
+			(at 247.65 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 241.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 246.38 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e48785e3-c16f-4291-a456-818576e8f12b")
+		)
+		(pin "2"
+			(uuid "7ff0ec5f-b253-474f-b38e-af0252dd2175")
+		)
+		(instances
+			(project "makita_aws_rx"
+				(path "/5e34a7b6-ac3a-4d62-b642-06cd9d5c366e"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -5202,82 +5310,6 @@
 			(project ""
 				(path "/5e34a7b6-ac3a-4d62-b642-06cd9d5c366e"
 					(reference "K2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:BF244A")
-		(at 123.19 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c201e36a-6068-44aa-94b5-2df5393bb03d")
-		(property "Reference" "Q1"
-			(at 128.27 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BF244A"
-			(at 128.27 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 128.27 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/BF244x.pdf"
-			(at 128.27 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "50mA Id, 30V Vgs, N-Channel FET Transistor, TO-92"
-			(at 123.19 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "faa4acba-bd7c-4596-8810-82b3502edf6d")
-		)
-		(pin "1"
-			(uuid "0861ced9-b982-4eab-b177-2de06b5fb23f")
-		)
-		(pin "2"
-			(uuid "a31cdc96-388d-4a52-adf2-75f8510b8ca9")
-		)
-		(instances
-			(project ""
-				(path "/5e34a7b6-ac3a-4d62-b642-06cd9d5c366e"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
