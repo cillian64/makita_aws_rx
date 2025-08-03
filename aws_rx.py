@@ -180,10 +180,10 @@ if __name__ == "__main__":
         while scanning:
             # A constant 200ms tick is really convenient but does mean the
             # button isn't very responsive.  A really hacky gross (but simple)
-            # way to fix this is just to abort the sleep if the button is
-            # pressed
+            # way to fix this is just to abort the sleep when the button is
+            # pressed. Note button is active-low.
             for _ in range(10):
-                if not pin_sw.value():  # Switch is active-low
+                if receiver.override_sw_state and not pin_sw.value():
                     break
                 time.sleep_ms(20)
             receiver.tick()
